@@ -5,8 +5,8 @@ from collections import defaultdict
 from river import base, cluster, stats, utils
 
 
-class CluStream(base.Clusterer):
-    """CluStream
+class CluStreamWelford(base.Clusterer):
+    """CluStream (using Welford's algorithm)
 
     The CluStream algorithm [^1] maintains statistical information about the
     data using micro-clusters. These micro-clusters are temporal extensions of
@@ -93,7 +93,7 @@ class CluStream(base.Clusterer):
     ...     [5, 4]
     ... ]
 
-    >>> clustream = cluster.CluStream(
+    >>> clustream_welford = cluster.CluStreamWelford(
     ...     n_macro_clusters=3,
     ...     max_micro_clusters=5,
     ...     time_gap=3,
@@ -102,15 +102,15 @@ class CluStream(base.Clusterer):
     ... )
 
     >>> for x, _ in stream.iter_array(X):
-    ...     clustream = clustream.learn_one(x)
+    ...     clustream_welford = clustream_welford.learn_one(x)
 
-    >>> clustream.predict_one({0: 1, 1: 1})
+    >>> clustream_welford.predict_one({0: 1, 1: 1})
     1
 
-    >>> clustream.predict_one({0: -4, 1: 3})
+    >>> clustream_welford.predict_one({0: -4, 1: 3})
     2
 
-    >>> clustream.predict_one({0: 4, 1: 3.5})
+    >>> clustream_welford.predict_one({0: 4, 1: 3.5})
     0
 
     """
