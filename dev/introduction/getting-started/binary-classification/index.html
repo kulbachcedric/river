@@ -14,8 +14,14 @@
       
         <link rel="canonical" href="https://riverml.xyz/dev/introduction/getting-started/binary-classification/">
       
+      
+        <link rel="prev" href="../../basic-concepts/">
+      
+      
+        <link rel="next" href="../concept-drift-detection/">
+      
       <link rel="icon" href="../../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.8">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.12">
     
     
       
@@ -23,15 +29,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.20d9efc8.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.0d440cfe.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.815d1a91.min.css">
-        
-          
-          
-          <meta name="theme-color" content="#4051b5">
-        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.2505c338.min.css">
       
       
 
@@ -76,7 +77,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     
@@ -157,7 +158,7 @@
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -169,7 +170,7 @@
         <a href="https://github.com/online-ml/river" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     online-ml/river
@@ -282,7 +283,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../releases/0.9.0/" class="md-tabs__link">
+      <a href="../../../releases/unreleased/" class="md-tabs__link">
         Releases 🏗️
       </a>
     </li>
@@ -338,7 +339,7 @@
       <a href="https://github.com/online-ml/river" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     online-ml/river
@@ -361,31 +362,32 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
       
       
-        <label class="md-nav__link" for="__nav_1">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
           Introduction 🍼
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Introduction 🍼" data-md-level="1">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_1">
           <span class="md-nav__icon md-icon"></span>
           Introduction 🍼
@@ -431,8 +433,9 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_3" type="checkbox" id="__nav_1_3" checked>
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" checked>
       
       
         
@@ -446,12 +449,12 @@
         
       
       
-        <label class="md-nav__link" for="__nav_1_3">
+        <label class="md-nav__link" for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
           Getting started
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Getting started" data-md-level="2">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_1_3">
           <span class="md-nav__icon md-icon"></span>
           Getting started
@@ -467,7 +470,7 @@
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
         
@@ -590,39 +593,42 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
       
       
-        <label class="md-nav__link" for="__nav_2">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
           Recipes 🍱
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Recipes 🍱" data-md-level="1">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Recipes 🍱
@@ -733,6 +739,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../recipes/active-learning/" class="md-nav__link">
+        Active learning
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../recipes/bandits-101/" class="md-nav__link">
+        Multi-armed bandits
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../recipes/cloning-and-mutating/" class="md-nav__link">
         Cloning and mutating
       </a>
@@ -749,20 +783,6 @@
     <li class="md-nav__item">
       <a href="../../../recipes/rolling-computations/" class="md-nav__link">
         Rolling computations
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../recipes/bandits-101/" class="md-nav__link">
-        Multi-armed bandits
       </a>
     </li>
   
@@ -786,37 +806,38 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
       
       
-        <label class="md-nav__link" for="__nav_3">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
           Examples 🌶️
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Examples 🌶️" data-md-level="1">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           Examples 🌶️
@@ -944,8 +965,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_9" type="checkbox" id="__nav_3_9" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9" >
       
       
         
@@ -957,12 +979,12 @@
         
       
       
-        <label class="md-nav__link" for="__nav_3_9">
+        <label class="md-nav__link" for="__nav_3_9" id="__nav_3_9_label" tabindex="0">
           Matrix factorization for recommender systems
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Matrix factorization for recommender systems" data-md-level="2">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_9_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3_9">
           <span class="md-nav__icon md-icon"></span>
           Matrix factorization for recommender systems
@@ -1035,91 +1057,100 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
       
       
-        <label class="md-nav__link" for="__nav_4">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
           API reference 📚
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="API reference 📚" data-md-level="1">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
           API reference 📚
@@ -1149,18 +1180,11 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" >
       
       
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
       
-        
-          
-        
-          
-        
-          
-        
-          
+      
         
           
         
@@ -1168,13 +1192,127 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_2">
+        <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+          active
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          active
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/active/EntropySampler/" class="md-nav__link">
+        EntropySampler
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_2" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_2_2" id="__nav_4_2_2_label" tabindex="0">
+          base
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          base
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/active/base/ActiveLearningClassifier/" class="md-nav__link">
+        ActiveLearningClassifier
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
           anomaly
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="anomaly" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_2">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_3">
           <span class="md-nav__icon md-icon"></span>
           anomaly
         </label>
@@ -1259,8 +1397,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2_6" type="checkbox" id="__nav_4_2_6" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_6" >
       
       
         
@@ -1268,13 +1407,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_2_6">
+        <label class="md-nav__link" for="__nav_4_3_6" id="__nav_4_3_6_label" tabindex="0">
           base
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="base" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_2_6">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_3_6">
           <span class="md-nav__icon md-icon"></span>
           base
         </label>
@@ -1317,8 +1456,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
       
       
         
@@ -1332,15 +1472,17 @@
         
           
         
+          
+        
       
       
-        <label class="md-nav__link" for="__nav_4_3">
+        <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
           bandit
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="bandit" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_3">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_4">
           <span class="md-nav__icon md-icon"></span>
           bandit
         </label>
@@ -1411,8 +1553,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3_5" type="checkbox" id="__nav_4_3_5" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_5" >
       
       
         
@@ -1420,13 +1563,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_3_5">
+        <label class="md-nav__link" for="__nav_4_4_5" id="__nav_4_4_5_label" tabindex="0">
           base
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="base" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_3_5">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_4_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_4_5">
           <span class="md-nav__icon md-icon"></span>
           base
         </label>
@@ -1440,6 +1583,74 @@
     <li class="md-nav__item">
       <a href="../../../api/bandit/base/Policy/" class="md-nav__link">
         Policy
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_6" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_4_6" id="__nav_4_4_6_label" tabindex="0">
+          envs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_4_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_4_6">
+          <span class="md-nav__icon md-icon"></span>
+          envs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/bandit/envs/CandyCaneContest/" class="md-nav__link">
+        CandyCaneContest
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/bandit/envs/KArmedTestbed/" class="md-nav__link">
+        KArmedTestbed
       </a>
     </li>
   
@@ -1469,52 +1680,61 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" >
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
       
       
-        <label class="md-nav__link" for="__nav_4_4">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
           base
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="base" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_4">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_5">
           <span class="md-nav__icon md-icon"></span>
           base
         </label>
@@ -1528,6 +1748,34 @@
     <li class="md-nav__item">
       <a href="../../../api/base/Base/" class="md-nav__link">
         Base
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/base/BinaryDriftAndWarningDetector/" class="md-nav__link">
+        BinaryDriftAndWarningDetector
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/base/BinaryDriftDetector/" class="md-nav__link">
+        BinaryDriftDetector
       </a>
     </li>
   
@@ -1556,6 +1804,20 @@
     <li class="md-nav__item">
       <a href="../../../api/base/Clusterer/" class="md-nav__link">
         Clusterer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/base/DriftAndWarningDetector/" class="md-nav__link">
+        DriftAndWarningDetector
       </a>
     </li>
   
@@ -1666,8 +1928,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../api/base/MultiOutputMixin/" class="md-nav__link">
-        MultiOutputMixin
+      <a href="../../../api/base/MultiLabelClassifier/" class="md-nav__link">
+        MultiLabelClassifier
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/base/MultiTargetRegressor/" class="md-nav__link">
+        MultiTargetRegressor
       </a>
     </li>
   
@@ -1760,32 +2036,33 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" type="checkbox" id="__nav_4_5" >
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" >
       
       
-        <label class="md-nav__link" for="__nav_4_5">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
           cluster
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="cluster" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_5">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_6">
           <span class="md-nav__icon md-icon"></span>
           cluster
         </label>
@@ -1891,22 +2168,11 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" type="checkbox" id="__nav_4_6" >
       
       
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7" >
       
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
+      
         
           
         
@@ -1926,13 +2192,189 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_6">
+        <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="0">
+          compat
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_7">
+          <span class="md-nav__icon md-icon"></span>
+          compat
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/compat/River2SKLClassifier/" class="md-nav__link">
+        River2SKLClassifier
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/compat/River2SKLClusterer/" class="md-nav__link">
+        River2SKLClusterer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/compat/River2SKLRegressor/" class="md-nav__link">
+        River2SKLRegressor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/compat/River2SKLTransformer/" class="md-nav__link">
+        River2SKLTransformer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/compat/SKL2RiverClassifier/" class="md-nav__link">
+        SKL2RiverClassifier
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/compat/SKL2RiverRegressor/" class="md-nav__link">
+        SKL2RiverRegressor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/compat/convert-river-to-sklearn/" class="md-nav__link">
+        convert_river_to_sklearn
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/compat/convert-sklearn-to-river/" class="md-nav__link">
+        convert_sklearn_to_river
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_8" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_8" id="__nav_4_8_label" tabindex="0">
           compose
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="compose" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_6">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_8_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_8">
           <span class="md-nav__icon md-icon"></span>
           compose
         </label>
@@ -2150,8 +2592,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_7" type="checkbox" id="__nav_4_7" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_9" >
       
       
         
@@ -2161,13 +2604,81 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_7">
+        <label class="md-nav__link" for="__nav_4_9" id="__nav_4_9_label" tabindex="0">
+          conf
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_9_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_9">
+          <span class="md-nav__icon md-icon"></span>
+          conf
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/conf/Interval/" class="md-nav__link">
+        Interval
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/conf/RegressionJackknife/" class="md-nav__link">
+        RegressionJackknife
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_10" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_10" id="__nav_4_10_label" tabindex="0">
           covariance
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="covariance" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_7">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_10_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_10">
           <span class="md-nav__icon md-icon"></span>
           covariance
         </label>
@@ -2217,70 +2728,71 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_8" type="checkbox" id="__nav_4_8" >
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_11" >
       
       
-        <label class="md-nav__link" for="__nav_4_8">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_11" id="__nav_4_11_label" tabindex="0">
           datasets
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="datasets" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_8">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_11_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_11">
           <span class="md-nav__icon md-icon"></span>
           datasets
         </label>
@@ -2617,8 +3129,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_8_24" type="checkbox" id="__nav_4_8_24" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_11_24" >
       
       
         
@@ -2632,13 +3145,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_8_24">
+        <label class="md-nav__link" for="__nav_4_11_24" id="__nav_4_11_24_label" tabindex="0">
           base
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="base" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_8_24">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_11_24_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_11_24">
           <span class="md-nav__icon md-icon"></span>
           base
         </label>
@@ -2716,58 +3229,59 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_8_25" type="checkbox" id="__nav_4_8_25" >
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_11_25" >
       
       
-        <label class="md-nav__link" for="__nav_4_8_25">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_11_25" id="__nav_4_11_25_label" tabindex="0">
           synth
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="synth" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_8_25">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_11_25_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_11_25">
           <span class="md-nav__icon md-icon"></span>
           synth
         </label>
@@ -3062,14 +3576,11 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_9" type="checkbox" id="__nav_4_9" >
       
       
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_12" >
       
-        
-          
-        
-          
+      
         
           
         
@@ -3085,13 +3596,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_9">
+        <label class="md-nav__link" for="__nav_4_12" id="__nav_4_12_label" tabindex="0">
           drift
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="drift" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_9">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_12_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_12">
           <span class="md-nav__icon md-icon"></span>
           drift
         </label>
@@ -3117,8 +3628,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../api/drift/DDM/" class="md-nav__link">
-        DDM
+      <a href="../../../api/drift/DriftRetrainingClassifier/" class="md-nav__link">
+        DriftRetrainingClassifier
       </a>
     </li>
   
@@ -3131,36 +3642,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../api/drift/EDDM/" class="md-nav__link">
-        EDDM
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../api/drift/HDDM-A/" class="md-nav__link">
-        HDDM_A
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../api/drift/HDDM-W/" class="md-nav__link">
-        HDDM_W
+      <a href="../../../api/drift/DummyDriftDetector/" class="md-nav__link">
+        DummyDriftDetector
       </a>
     </li>
   
@@ -3200,10 +3683,96 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_12_6" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_12_6" id="__nav_4_12_6_label" tabindex="0">
+          binary
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_12_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_12_6">
+          <span class="md-nav__icon md-icon"></span>
+          binary
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../../api/drift/PeriodicTrigger/" class="md-nav__link">
-        PeriodicTrigger
+      <a href="../../../api/drift/binary/DDM/" class="md-nav__link">
+        DDM
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/drift/binary/EDDM/" class="md-nav__link">
+        EDDM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/drift/binary/HDDM-A/" class="md-nav__link">
+        HDDM_A
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/drift/binary/HDDM-W/" class="md-nav__link">
+        HDDM_W
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -3225,8 +3794,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_10" type="checkbox" id="__nav_4_10" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_13" >
       
       
         
@@ -3238,13 +3808,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_10">
+        <label class="md-nav__link" for="__nav_4_13" id="__nav_4_13_label" tabindex="0">
           dummy
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="dummy" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_10">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_13_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_13">
           <span class="md-nav__icon md-icon"></span>
           dummy
         </label>
@@ -3308,44 +3878,45 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_11" type="checkbox" id="__nav_4_11" >
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_14" >
       
       
-        <label class="md-nav__link" for="__nav_4_11">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_14" id="__nav_4_14_label" tabindex="0">
           ensemble
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="ensemble" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_11">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_14_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_14">
           <span class="md-nav__icon md-icon"></span>
           ensemble
         </label>
@@ -3359,6 +3930,20 @@
     <li class="md-nav__item">
       <a href="../../../api/ensemble/ADWINBaggingClassifier/" class="md-nav__link">
         ADWINBaggingClassifier
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/ensemble/ADWINBoostingClassifier/" class="md-nav__link">
+        ADWINBoostingClassifier
       </a>
     </li>
   
@@ -3385,22 +3970,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../api/ensemble/AdaptiveRandomForestClassifier/" class="md-nav__link">
-        AdaptiveRandomForestClassifier
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../api/ensemble/AdaptiveRandomForestRegressor/" class="md-nav__link">
-        AdaptiveRandomForestRegressor
+      <a href="../../../api/ensemble/BOLEClassifier/" class="md-nav__link">
+        BOLEClassifier
       </a>
     </li>
   
@@ -3535,32 +4106,33 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_12" type="checkbox" id="__nav_4_12" >
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_15" >
       
       
-        <label class="md-nav__link" for="__nav_4_12">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_15" id="__nav_4_15_label" tabindex="0">
           evaluate
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="evaluate" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_12">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_15_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_15">
           <span class="md-nav__icon md-icon"></span>
           evaluate
         </label>
@@ -3666,36 +4238,37 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_13" type="checkbox" id="__nav_4_13" >
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_16" >
       
       
-        <label class="md-nav__link" for="__nav_4_13">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_16" id="__nav_4_16_label" tabindex="0">
           facto
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="facto" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_13">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_16_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_16">
           <span class="md-nav__icon md-icon"></span>
           facto
         </label>
@@ -3829,32 +4402,33 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_14" type="checkbox" id="__nav_4_14" >
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_17" >
       
       
-        <label class="md-nav__link" for="__nav_4_14">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_17" id="__nav_4_17_label" tabindex="0">
           feature_extraction
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="feature_extraction" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_14">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_17_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_17">
           <span class="md-nav__icon md-icon"></span>
           feature_extraction
         </label>
@@ -3960,8 +4534,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_15" type="checkbox" id="__nav_4_15" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_18" >
       
       
         
@@ -3973,13 +4548,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_15">
+        <label class="md-nav__link" for="__nav_4_18" id="__nav_4_18_label" tabindex="0">
           feature_selection
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="feature_selection" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_15">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_18_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_18">
           <span class="md-nav__icon md-icon"></span>
           feature_selection
         </label>
@@ -4043,16 +4618,11 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_16" type="checkbox" id="__nav_4_16" >
       
       
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_19" >
       
-        
-          
-        
-          
-        
-          
+      
         
           
         
@@ -4064,13 +4634,119 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_16">
+        <label class="md-nav__link" for="__nav_4_19" id="__nav_4_19_label" tabindex="0">
+          forest
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_19_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_19">
+          <span class="md-nav__icon md-icon"></span>
+          forest
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/forest/AMFClassifier/" class="md-nav__link">
+        AMFClassifier
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/forest/ARFClassifier/" class="md-nav__link">
+        ARFClassifier
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/forest/ARFRegressor/" class="md-nav__link">
+        ARFRegressor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/forest/OXTRegressor/" class="md-nav__link">
+        OXTRegressor
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_20" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_20" id="__nav_4_20_label" tabindex="0">
           imblearn
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="imblearn" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_16">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_20_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_20">
           <span class="md-nav__icon md-icon"></span>
           imblearn
         </label>
@@ -4190,38 +4866,39 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_17" type="checkbox" id="__nav_4_17" >
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_21" >
       
       
-        <label class="md-nav__link" for="__nav_4_17">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_21" id="__nav_4_21_label" tabindex="0">
           linear_model
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="linear_model" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_17">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_21_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_21">
           <span class="md-nav__icon md-icon"></span>
           linear_model
         </label>
@@ -4348,8 +5025,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_17_9" type="checkbox" id="__nav_4_17_9" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_21_9" >
       
       
         
@@ -4357,13 +5035,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_17_9">
+        <label class="md-nav__link" for="__nav_4_21_9" id="__nav_4_21_9_label" tabindex="0">
           base
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="base" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_17_9">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_21_9_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_21_9">
           <span class="md-nav__icon md-icon"></span>
           base
         </label>
@@ -4406,118 +5084,119 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_18" type="checkbox" id="__nav_4_18" >
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_22" >
       
       
-        <label class="md-nav__link" for="__nav_4_18">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_22" id="__nav_4_22_label" tabindex="0">
           metrics
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="metrics" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_18">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_22_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_22">
           <span class="md-nav__icon md-icon"></span>
           metrics
         </label>
@@ -5190,34 +5869,35 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_18_48" type="checkbox" id="__nav_4_18_48" >
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_22_48" >
       
       
-        <label class="md-nav__link" for="__nav_4_18_48">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_22_48" id="__nav_4_22_48_label" tabindex="0">
           base
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="base" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_18_48">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_22_48_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_22_48">
           <span class="md-nav__icon md-icon"></span>
           base
         </label>
@@ -5337,32 +6017,33 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_18_49" type="checkbox" id="__nav_4_18_49" >
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_22_49" >
       
       
-        <label class="md-nav__link" for="__nav_4_18_49">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_22_49" id="__nav_4_22_49_label" tabindex="0">
           multioutput
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="multioutput" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_18_49">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_22_49_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_22_49">
           <span class="md-nav__icon md-icon"></span>
           multioutput
         </label>
@@ -5447,8 +6128,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_18_49_6" type="checkbox" id="__nav_4_18_49_6" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_22_49_6" >
       
       
         
@@ -5458,13 +6140,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_18_49_6">
+        <label class="md-nav__link" for="__nav_4_22_49_6" id="__nav_4_22_49_6_label" tabindex="0">
           base
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="base" data-md-level="4">
-        <label class="md-nav__title" for="__nav_4_18_49_6">
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_22_49_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_22_49_6">
           <span class="md-nav__icon md-icon"></span>
           base
         </label>
@@ -5528,8 +6210,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_19" type="checkbox" id="__nav_4_19" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_23" >
       
       
         
@@ -5539,13 +6222,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_19">
+        <label class="md-nav__link" for="__nav_4_23" id="__nav_4_23_label" tabindex="0">
           misc
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="misc" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_19">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_23_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_23">
           <span class="md-nav__icon md-icon"></span>
           misc
         </label>
@@ -5595,8 +6278,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_20" type="checkbox" id="__nav_4_20" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_24" >
       
       
         
@@ -5612,13 +6296,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_20">
+        <label class="md-nav__link" for="__nav_4_24" id="__nav_4_24_label" tabindex="0">
           model_selection
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="model_selection" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_20">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_24_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_24">
           <span class="md-nav__icon md-icon"></span>
           model_selection
         </label>
@@ -5689,8 +6373,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_20_5" type="checkbox" id="__nav_4_20_5" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_24_5" >
       
       
         
@@ -5700,13 +6385,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_20_5">
+        <label class="md-nav__link" for="__nav_4_24_5" id="__nav_4_24_5_label" tabindex="0">
           base
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="base" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_20_5">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_24_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_24_5">
           <span class="md-nav__icon md-icon"></span>
           base
         </label>
@@ -5763,8 +6448,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_21" type="checkbox" id="__nav_4_21" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_25" >
       
       
         
@@ -5776,13 +6462,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_21">
+        <label class="md-nav__link" for="__nav_4_25" id="__nav_4_25_label" tabindex="0">
           multiclass
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="multiclass" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_21">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_25_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_25">
           <span class="md-nav__icon md-icon"></span>
           multiclass
         </label>
@@ -5846,8 +6532,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_22" type="checkbox" id="__nav_4_22" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_26" >
       
       
         
@@ -5859,15 +6546,17 @@
         
           
         
+          
+        
       
       
-        <label class="md-nav__link" for="__nav_4_22">
+        <label class="md-nav__link" for="__nav_4_26" id="__nav_4_26_label" tabindex="0">
           multioutput
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="multioutput" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_22">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_26_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_26">
           <span class="md-nav__icon md-icon"></span>
           multioutput
         </label>
@@ -5895,6 +6584,20 @@
     <li class="md-nav__item">
       <a href="../../../api/multioutput/MonteCarloClassifierChain/" class="md-nav__link">
         MonteCarloClassifierChain
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/multioutput/MultiClassEncoder/" class="md-nav__link">
+        MultiClassEncoder
       </a>
     </li>
   
@@ -5945,8 +6648,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_23" type="checkbox" id="__nav_4_23" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_27" >
       
       
         
@@ -5960,13 +6664,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_23">
+        <label class="md-nav__link" for="__nav_4_27" id="__nav_4_27_label" tabindex="0">
           naive_bayes
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="naive_bayes" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_23">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_27_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_27">
           <span class="md-nav__icon md-icon"></span>
           naive_bayes
         </label>
@@ -6044,8 +6748,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_24" type="checkbox" id="__nav_4_24" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_28" >
       
       
         
@@ -6057,13 +6762,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_24">
+        <label class="md-nav__link" for="__nav_4_28" id="__nav_4_28_label" tabindex="0">
           neighbors
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="neighbors" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_24">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_28_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_28">
           <span class="md-nav__icon md-icon"></span>
           neighbors
         </label>
@@ -6127,8 +6832,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_25" type="checkbox" id="__nav_4_25" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_29" >
       
       
         
@@ -6138,13 +6844,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_25">
+        <label class="md-nav__link" for="__nav_4_29" id="__nav_4_29_label" tabindex="0">
           neural_net
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="neural_net" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_25">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_29_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_29">
           <span class="md-nav__icon md-icon"></span>
           neural_net
         </label>
@@ -6173,8 +6879,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_25_2" type="checkbox" id="__nav_4_25_2" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_29_2" >
       
       
         
@@ -6186,13 +6893,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_25_2">
+        <label class="md-nav__link" for="__nav_4_29_2" id="__nav_4_29_2_label" tabindex="0">
           activations
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="activations" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_25_2">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_29_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_29_2">
           <span class="md-nav__icon md-icon"></span>
           activations
         </label>
@@ -6263,54 +6970,55 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_26" type="checkbox" id="__nav_4_26" >
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_30" >
       
       
-        <label class="md-nav__link" for="__nav_4_26">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_30" id="__nav_4_30_label" tabindex="0">
           optim
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="optim" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_26">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_30_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_30">
           <span class="md-nav__icon md-icon"></span>
           optim
         </label>
@@ -6507,8 +7215,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_26_14" type="checkbox" id="__nav_4_26_14" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_30_14" >
       
       
         
@@ -6522,13 +7231,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_26_14">
+        <label class="md-nav__link" for="__nav_4_30_14" id="__nav_4_30_14_label" tabindex="0">
           base
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="base" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_26_14">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_30_14_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_30_14">
           <span class="md-nav__icon md-icon"></span>
           base
         </label>
@@ -6606,8 +7315,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_26_15" type="checkbox" id="__nav_4_26_15" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_30_15" >
       
       
         
@@ -6619,13 +7329,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_26_15">
+        <label class="md-nav__link" for="__nav_4_30_15" id="__nav_4_30_15_label" tabindex="0">
           initializers
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="initializers" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_26_15">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_30_15_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_30_15">
           <span class="md-nav__icon md-icon"></span>
           initializers
         </label>
@@ -6689,48 +7399,49 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_26_16" type="checkbox" id="__nav_4_26_16" >
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_30_16" >
       
       
-        <label class="md-nav__link" for="__nav_4_26_16">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_30_16" id="__nav_4_30_16_label" tabindex="0">
           losses
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="losses" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_26_16">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_30_16_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_30_16">
           <span class="md-nav__icon md-icon"></span>
           losses
         </label>
@@ -6948,8 +7659,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_26_17" type="checkbox" id="__nav_4_26_17" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_30_17" >
       
       
         
@@ -6961,13 +7673,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_26_17">
+        <label class="md-nav__link" for="__nav_4_30_17" id="__nav_4_30_17_label" tabindex="0">
           schedulers
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="schedulers" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_26_17">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_30_17_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_30_17">
           <span class="md-nav__icon md-icon"></span>
           schedulers
         </label>
@@ -7038,48 +7750,49 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_27" type="checkbox" id="__nav_4_27" >
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_31" >
       
       
-        <label class="md-nav__link" for="__nav_4_27">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_31" id="__nav_4_31_label" tabindex="0">
           preprocessing
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="preprocessing" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_27">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_31_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_31">
           <span class="md-nav__icon md-icon"></span>
           preprocessing
         </label>
@@ -7297,8 +8010,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_28" type="checkbox" id="__nav_4_28" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_32" >
       
       
         
@@ -7312,13 +8026,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_28">
+        <label class="md-nav__link" for="__nav_4_32" id="__nav_4_32_label" tabindex="0">
           proba
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="proba" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_28">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_32_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_32">
           <span class="md-nav__icon md-icon"></span>
           proba
         </label>
@@ -7375,8 +8089,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_28_4" type="checkbox" id="__nav_4_28_4" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_32_4" >
       
       
         
@@ -7388,13 +8103,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_28_4">
+        <label class="md-nav__link" for="__nav_4_32_4" id="__nav_4_32_4_label" tabindex="0">
           base
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="base" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_28_4">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_32_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_32_4">
           <span class="md-nav__icon md-icon"></span>
           base
         </label>
@@ -7465,8 +8180,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_29" type="checkbox" id="__nav_4_29" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_33" >
       
       
         
@@ -7482,13 +8198,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_29">
+        <label class="md-nav__link" for="__nav_4_33" id="__nav_4_33_label" tabindex="0">
           reco
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="reco" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_29">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_33_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_33">
           <span class="md-nav__icon md-icon"></span>
           reco
         </label>
@@ -7559,8 +8275,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_29_5" type="checkbox" id="__nav_4_29_5" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_33_5" >
       
       
         
@@ -7568,13 +8285,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_29_5">
+        <label class="md-nav__link" for="__nav_4_33_5" id="__nav_4_33_5_label" tabindex="0">
           base
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="base" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_29_5">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_33_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_33_5">
           <span class="md-nav__icon md-icon"></span>
           base
         </label>
@@ -7617,8 +8334,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_30" type="checkbox" id="__nav_4_30" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_34" >
       
       
         
@@ -7626,13 +8344,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_30">
+        <label class="md-nav__link" for="__nav_4_34" id="__nav_4_34_label" tabindex="0">
           rules
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="rules" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_30">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_34_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_34">
           <span class="md-nav__icon md-icon"></span>
           rules
         </label>
@@ -7668,8 +8386,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_31" type="checkbox" id="__nav_4_31" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_35" >
       
       
         
@@ -7683,13 +8402,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_31">
+        <label class="md-nav__link" for="__nav_4_35" id="__nav_4_35_label" tabindex="0">
           sketch
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="sketch" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_31">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_35_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_35">
           <span class="md-nav__icon md-icon"></span>
           sketch
         </label>
@@ -7767,86 +8486,87 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_32" type="checkbox" id="__nav_4_32" >
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_36" >
       
       
-        <label class="md-nav__link" for="__nav_4_32">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_36" id="__nav_4_36_label" tabindex="0">
           stats
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="stats" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_32">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_36_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_36">
           <span class="md-nav__icon md-icon"></span>
           stats
         </label>
@@ -8309,8 +9029,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_32_33" type="checkbox" id="__nav_4_32_33" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_36_33" >
       
       
         
@@ -8320,13 +9041,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_32_33">
+        <label class="md-nav__link" for="__nav_4_36_33" id="__nav_4_36_33_label" tabindex="0">
           base
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="base" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_32_33">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_36_33_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_36_33">
           <span class="md-nav__icon md-icon"></span>
           base
         </label>
@@ -8383,40 +9104,45 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_33" type="checkbox" id="__nav_4_33" >
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_37" >
       
       
-        <label class="md-nav__link" for="__nav_4_33">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_37" id="__nav_4_37_label" tabindex="0">
           stream
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="stream" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_33">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_37_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_37">
           <span class="md-nav__icon md-icon"></span>
           stream
         </label>
@@ -8540,6 +9266,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../api/stream/iter-sklearn-dataset/" class="md-nav__link">
+        iter_sklearn_dataset
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/stream/iter-sql/" class="md-nav__link">
+        iter_sql
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../api/stream/shuffle/" class="md-nav__link">
         shuffle
       </a>
@@ -8578,36 +9332,37 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_34" type="checkbox" id="__nav_4_34" >
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_38" >
       
       
-        <label class="md-nav__link" for="__nav_4_34">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_38" id="__nav_4_38_label" tabindex="0">
           time_series
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="time_series" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_34">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_38_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_38">
           <span class="md-nav__icon md-icon"></span>
           time_series
         </label>
@@ -8720,8 +9475,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_34_8" type="checkbox" id="__nav_4_34_8" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_38_8" >
       
       
         
@@ -8729,13 +9485,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_34_8">
+        <label class="md-nav__link" for="__nav_4_38_8" id="__nav_4_38_8_label" tabindex="0">
           base
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="base" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_34_8">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_38_8_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_38_8">
           <span class="md-nav__icon md-icon"></span>
           base
         </label>
@@ -8778,42 +9534,41 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_35" type="checkbox" id="__nav_4_35" >
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_39" >
       
       
-        <label class="md-nav__link" for="__nav_4_35">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_39" id="__nav_4_39_label" tabindex="0">
           tree
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="tree" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_35">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_39_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_39">
           <span class="md-nav__icon md-icon"></span>
           tree
         </label>
@@ -8895,20 +9650,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../api/tree/LabelCombinationHoeffdingTreeClassifier/" class="md-nav__link">
-        LabelCombinationHoeffdingTreeClassifier
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../../api/tree/SGTClassifier/" class="md-nav__link">
         SGTClassifier
       </a>
@@ -8954,8 +9695,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_35_10" type="checkbox" id="__nav_4_35_10" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_39_9" >
       
       
         
@@ -8965,13 +9707,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_35_10">
+        <label class="md-nav__link" for="__nav_4_39_9" id="__nav_4_39_9_label" tabindex="0">
           base
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="base" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_35_10">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_39_9_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_39_9">
           <span class="md-nav__icon md-icon"></span>
           base
         </label>
@@ -9021,40 +9763,41 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_35_11" type="checkbox" id="__nav_4_35_11" >
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_39_10" >
       
       
-        <label class="md-nav__link" for="__nav_4_35_11">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_39_10" id="__nav_4_39_10_label" tabindex="0">
           splitter
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="splitter" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_35_11">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_39_10_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_39_10">
           <span class="md-nav__icon md-icon"></span>
           splitter
         </label>
@@ -9223,42 +9966,45 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_36" type="checkbox" id="__nav_4_36" >
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_40" >
       
       
-        <label class="md-nav__link" for="__nav_4_36">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_40" id="__nav_4_40_label" tabindex="0">
           utils
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="utils" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_36">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_40_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_40">
           <span class="md-nav__icon md-icon"></span>
           utils
         </label>
@@ -9385,50 +10131,53 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_36_9" type="checkbox" id="__nav_4_36_9" >
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_40_9" >
       
       
-        <label class="md-nav__link" for="__nav_4_36_9">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_40_9" id="__nav_4_40_9_label" tabindex="0">
           math
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="math" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_36_9">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_40_9_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_40_9">
           <span class="md-nav__icon md-icon"></span>
           math
         </label>
@@ -9498,6 +10247,20 @@
     <li class="md-nav__item">
       <a href="../../../api/utils/math/dotvecmat/" class="md-nav__link">
         dotvecmat
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/utils/math/log-sum-2-exp/" class="md-nav__link">
+        log_sum_2_exp
       </a>
     </li>
   
@@ -9660,8 +10423,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_36_10" type="checkbox" id="__nav_4_36_10" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_40_10" >
       
       
         
@@ -9671,13 +10435,81 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_36_10">
+        <label class="md-nav__link" for="__nav_4_40_10" id="__nav_4_40_10_label" tabindex="0">
+          norm
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_40_10_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_40_10">
+          <span class="md-nav__icon md-icon"></span>
+          norm
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/utils/norm/normalize-values-in-dict/" class="md-nav__link">
+        normalize_values_in_dict
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/utils/norm/scale-values-in-dict/" class="md-nav__link">
+        scale_values_in_dict
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_40_11" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_40_11" id="__nav_4_40_11_label" tabindex="0">
           pretty
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="pretty" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_36_10">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_40_11_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_40_11">
           <span class="md-nav__icon md-icon"></span>
           pretty
         </label>
@@ -9727,8 +10559,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_36_11" type="checkbox" id="__nav_4_36_11" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_40_12" >
       
       
         
@@ -9736,13 +10569,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_36_11">
+        <label class="md-nav__link" for="__nav_4_40_12" id="__nav_4_40_12_label" tabindex="0">
           random
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="random" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_36_11">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_40_12_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_40_12">
           <span class="md-nav__icon md-icon"></span>
           random
         </label>
@@ -9793,8 +10626,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
       
       
         
@@ -9811,7 +10645,7 @@
           
         </div>
       
-      <nav class="md-nav" aria-label="FAQ 🙋" data-md-level="1">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           FAQ 🙋
@@ -9837,74 +10671,93 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
       
       
-        <label class="md-nav__link" for="__nav_6">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
           Releases 🏗️
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Releases 🏗️" data-md-level="1">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
           Releases 🏗️
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../releases/unreleased/" class="md-nav__link">
+        Unreleased
+      </a>
+    </li>
+  
+
+            
           
             
               
@@ -10108,6 +10961,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../releases/0.15.0/" class="md-nav__link">
+        0.15.0 - 2022-01-29
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../releases/0.14.0/" class="md-nav__link">
         0.14.0 - 2022-10-26
       </a>
@@ -10273,8 +11140,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
       
       
         
@@ -10291,7 +11159,7 @@
           
         </div>
       
-      <nav class="md-nav" aria-label="Benchmarks 📊" data-md-level="1">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
           Benchmarks 📊
@@ -10337,6 +11205,7 @@
               <article class="md-content__inner md-typeset">
                 
                   
+
 
 
 <h1 id="binary-classification">Binary classification<a class="headerlink" href="#binary-classification" title="Permanent link">&para;</a></h1>
@@ -10619,11 +11488,13 @@ Features  <span style="color: #008080; text-decoration-color: #008080; font-weig
   
     
     
+    
+    
       
       
     
     <a href="https://github.com/online-ml/river" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
     </a>
   
 </div>
@@ -10636,16 +11507,24 @@ Features  <span style="color: #008080; text-decoration-color: #008080; font-weig
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.instant", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.instant", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.4b2c34cd.min.js"></script>
+      
+        <script src="../../../js/mkdocs-charts-plugin.js"></script>
       
         <script src="../../../javascripts/config.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
       
     
   </body>
