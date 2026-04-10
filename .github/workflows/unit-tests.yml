@@ -39,8 +39,29 @@ jobs:
 
       - name: Download datasets
         run: |
-          poetry run python -c "from river import datasets; datasets.CreditCard().download(); datasets.Elec2().download(); datasets.SMSSpam().download()"
-          poetry run python -c "from river import bandit; bandit.datasets.NewsArticles().download()"
+          poetry run python - <<'PY'
+          import time
+          import urllib.error
+          import socket
+          from river import datasets, bandit
+
+          targets = [
+              datasets.CreditCard(),
+              datasets.Elec2(),
+              datasets.SMSSpam(),
+              bandit.datasets.NewsArticles(),
+          ]
+
+          for ds in targets:
+              for attempt in range(1, 6):
+                  try:
+                      ds.download()
+                      break
+                  except (urllib.error.URLError, socket.gaierror) as exc:
+                      if attempt == 5:
+                          raise
+                      time.sleep(10 * attempt)
+          PY
 
       - name: pytest
         run: |
